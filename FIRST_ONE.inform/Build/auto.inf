@@ -10545,7 +10545,7 @@ Constant IK2_First = selfobj;
 Constant IK3_First = I51_north;
 Constant IK4_First = nothing;
 Constant IK5_First = I128_purse;
-Constant IK6_First = I126_ground;
+Constant IK6_First = I126_ground_here;
 Constant IK7_First = nothing;
 Constant IK8_First = selfobj;
 Constant IK9_First = nothing;
@@ -10592,8 +10592,8 @@ VPH_Class ValuePropertyHolder_47
 ! Storage for property p14_adaptive_text_viewpoint of kind 
 Array KOVP_47_P14 table 0 0 (I112_first_person_singular) (I112_first_person_singular) (I112_first_person_singular) (I112_first_person_singular) (I112_first_person_singular) (I115_first_person_plural) ;
 Class K0_kind 
-    has ~proper
     has ~pluralname
+    has ~proper
     with list_together BC_4
     with short_name BC_5
     with plural BC_6
@@ -11020,7 +11020,7 @@ Object selfobj ""
     with cap_short_name BC_141
     has mark_as_thing
     with IK2_Count 0
-    with IK2_Link I126_ground
+    with IK2_Link I126_ground_here
     with IK8_Count 0
     with IK8_Link I127_tim_cook
     with vector 0
@@ -11035,10 +11035,10 @@ Object selfobj ""
     with article BC_147
 ;
 
-Object I126_ground ""
+Object I126_ground_here ""
     class K6_supporter
     with action_bitmap 0 0 0 0 0 
-    with name 'ground' 'supporters//p' 
+    with name 'ground' 'here' 'supporters//p' 
     with KD_Count 6
     has mark_as_thing
     with IK2_Count 2
@@ -11117,8 +11117,8 @@ Object -> I127_tim_cook ""
     with vector 0
     has proper
     with short_name BC_170
-    with description BC_171
-    with initial BC_172
+    with initial BC_171
+    with description BC_172
     with list_together BC_173
     with plural BC_174
     with article BC_175
@@ -11137,8 +11137,8 @@ Object -> -> I128_purse ""
     with vector 0
     has ~static
     with short_name BC_176
-    with description BC_177
-    with initial BC_178
+    with initial BC_177
+    with description BC_178
     with list_together BC_179
     with plural BC_180
     with article BC_181
@@ -48856,19 +48856,22 @@ Verb 'notify'
 
 
 
-Constant TX_PS_42 = ">";
+Constant TX_PS_45 = ">";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_33 = "As good-looking as ever.";
 Constant TX_PS_2 = "FIRST_ONE";
 Constant TX_PS_36 = "Facial Head Canada";
-Constant TX_PS_43 = "Fiction";
+Constant TX_PS_46 = "Fiction";
+Constant TX_PS_41 = "He doesn't like it, but since it holds his phone, he doesn't want it stolen.";
+Constant TX_PS_43 = "It's the iPhone 2G. You want to steal it but you aren't a criminal.";
 Constant TX_PS_38 = "Lobby";
-Constant TX_PS_47 = "QUIT";
-Constant TX_PS_44 = "RESTART";
-Constant TX_PS_45 = "RESTORE a saved game";
+Constant TX_PS_50 = "QUIT";
+Constant TX_PS_47 = "RESTART";
+Constant TX_PS_48 = "RESTORE a saved game";
 Constant TX_PS_4 = "TheTechRobo";
-Constant TX_PS_39 = "Tim Cook";
-Constant TX_PS_48 = "UNDO the last command";
+Constant TX_PS_39 = "There's a wonderful place in Ontario, and that's not Marineland - it's this lobby!";
+Constant TX_PS_40 = "Tim Cook";
+Constant TX_PS_51 = "UNDO the last command";
 Constant TX_PS_37 = "You are in Facial Head Canada, a great place that exists. :)";
 Constant TX_PS_32 = "Yourself";
 Constant TX_PS_9 = "animals";
@@ -48879,9 +48882,9 @@ Constant TX_PS_17 = "directions";
 Constant TX_PS_10 = "doors";
 Constant TX_PS_28 = "down";
 Constant TX_PS_25 = "east";
-Constant TX_PS_34 = "ground";
+Constant TX_PS_34 = "ground here";
 Constant TX_PS_35 = "iPad";
-Constant TX_PS_41 = "iPhone";
+Constant TX_PS_44 = "iPhone";
 Constant TX_PS_29 = "inside";
 Constant TX_PS_7 = "men";
 Constant TX_PS_18 = "north";
@@ -48890,9 +48893,9 @@ Constant TX_PS_21 = "northwest";
 Constant TX_PS_30 = "outside";
 Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
-Constant TX_PS_40 = "purse";
+Constant TX_PS_42 = "purse";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_46 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_49 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
@@ -56222,38 +56225,38 @@ Array BC_162 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_163 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_164 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_165 --> PACKED_TEXT_STORAGE TX_PS_38;
-Array BC_166 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_166 --> PACKED_TEXT_STORAGE TX_PS_39;
 Array BC_167 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_168 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_169 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_170 --> PACKED_TEXT_STORAGE TX_PS_39;
-Array BC_171 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_170 --> PACKED_TEXT_STORAGE TX_PS_40;
+Array BC_171 --> PACKED_TEXT_STORAGE TX_PS_41;
 Array BC_172 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_173 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_174 --> PACKED_TEXT_STORAGE TX_PS_6;
 Array BC_175 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_176 --> PACKED_TEXT_STORAGE TX_PS_40;
-Array BC_177 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_176 --> PACKED_TEXT_STORAGE TX_PS_42;
+Array BC_177 --> PACKED_TEXT_STORAGE TX_PS_43;
 Array BC_178 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_179 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_180 --> PACKED_TEXT_STORAGE TX_PS_11;
 Array BC_181 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_182 --> PACKED_TEXT_STORAGE TX_PS_41;
+Array BC_182 --> PACKED_TEXT_STORAGE TX_PS_44;
 Array BC_183 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_184 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_185 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_186 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_187 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_188 --> PACKED_TEXT_STORAGE TX_PS_42;
+Array BC_188 --> PACKED_TEXT_STORAGE TX_PS_45;
 Array BC_189 --> PACKED_TEXT_STORAGE TX_PS_4;
 Array BC_190 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_191 --> PACKED_TEXT_STORAGE TX_PS_43;
+Array BC_191 --> PACKED_TEXT_STORAGE TX_PS_46;
 Array BC_192 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_193 --> PACKED_TEXT_STORAGE TX_PS_44;
-Array BC_194 --> PACKED_TEXT_STORAGE TX_PS_45;
-Array BC_195 --> PACKED_TEXT_STORAGE TX_PS_46;
-Array BC_196 --> PACKED_TEXT_STORAGE TX_PS_47;
-Array BC_197 --> PACKED_TEXT_STORAGE TX_PS_48;
+Array BC_193 --> PACKED_TEXT_STORAGE TX_PS_47;
+Array BC_194 --> PACKED_TEXT_STORAGE TX_PS_48;
+Array BC_195 --> PACKED_TEXT_STORAGE TX_PS_49;
+Array BC_196 --> PACKED_TEXT_STORAGE TX_PS_50;
+Array BC_197 --> PACKED_TEXT_STORAGE TX_PS_51;
 
 
 
