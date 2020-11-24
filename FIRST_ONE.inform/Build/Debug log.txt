@@ -1,5 +1,5 @@
 Debugging log of Inform 7
-Inform called as: /usr/local/libexec/ni --release --internal /usr/local/share/inform7/Internal --format=ulx --project /home/thetechrobo/inform-rubbish/FIRST_ONE.inform
+Inform called as: /usr/local/libexec/ni --internal /usr/local/share/inform7/Internal --format=ulx --project /home/thetechrobo/inform-rubbish/FIRST_ONE.inform
 Found language bundle 'Spanish' (built in)
 Found language bundle 'French' (built in)
 Found language bundle 'Italian' (built in)
@@ -175,7 +175,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 102 files written as streams.
-CPU time: 221 centiseconds
+CPU time: 194 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
