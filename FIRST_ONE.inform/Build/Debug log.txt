@@ -14,7 +14,7 @@ Reading language definition from </usr/local/share/inform7/Internal/Languages/En
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 166 words long.
+I've now read your source text, which is 232 words long.
 
 
 -----------------------------------------------------
@@ -175,7 +175,7 @@ Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
 Total of 102 files written as streams.
-CPU time: 176 centiseconds
+CPU time: 174 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

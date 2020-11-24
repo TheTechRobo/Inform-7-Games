@@ -19,6 +19,15 @@ before taking the purse:
 		say "The purse is far too valuable for Tim Cook to let you have it.";
 		stop the action;
 	otherwise:
-		say "You have stolen Tim Cook's purse. He doesn't seem to mind."
-
+		say "You have stolen Tim Cook's purse. He doesn't seem to mind.";
+		continue the action;
+instead of taking the iPhone:
+	if a random chance of 1 in 100 succeeds:
+		say "Hey! Give that back!, Tim Cook says. You oblige.";
+		now Tim Cook has the iPhone;
+	otherwise:
+		say "Tim Cook is now chasing you.";
+		now the player is in Facial Head Canada;
+		say "You outran him, but you didn't get the purse.";
+		now the player is carrying the iPhone;
 
