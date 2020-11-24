@@ -6,11 +6,12 @@
             <format>glulx</format>
         </identification>
         <bibliographic>
-            <title>FIRST_ONE</title>
+            <title>Stupid, selfish Tim Cook</title>
             <author>TheTechRobo</author>
-            <headline>An Interactive Fiction</headline>
-            <genre>Fiction</genre>
+            <headline>A fiction that could probably happen</headline>
+            <genre>Realistic Fiction</genre>
             <firstpublished>2020</firstpublished>
+            <description>In TheTechRobo's first interactive fiction thingymathingy, you steal Tim Cook's purse. That's the plot.</description>
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
@@ -18,7 +19,7 @@
             <attached>
                 <release>
                     <releasedate>2020-11-23</releasedate>
-                    <version>1</version>
+                    <version>0</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6M62</compilerversion>
                 </release>
@@ -31,7 +32,7 @@
         </colophon>
         <glulx>
             <serial>201123</serial>
-            <release>1</release>
+            <release>0</release>
             <compiler>Inform 7 build 6M62</compiler>
         </glulx>
     </story>

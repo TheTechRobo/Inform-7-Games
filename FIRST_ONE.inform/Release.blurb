@@ -10,7 +10,7 @@ release to "/home/thetechrobo/inform-rubbish/FIRST_ONE.materials/Release"
 
 ! Blorb instructions
 
-storyfile leafname "FIRST_ONE.gblorb"
+storyfile leafname "Stupid, selfish Tim Cook.gblorb"
 storyfile "/home/thetechrobo/inform-rubbish/FIRST_ONE.inform/Build/output.ulx" include
 ifiction "/home/thetechrobo/inform-rubbish/FIRST_ONE.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
@@ -19,11 +19,11 @@ picture 1 "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
 ! Placeholder variables
 
 placeholder [IFID] = "035DCA9B-6694-48B0-A35F-968FE834E091"
-placeholder [RELEASE] = "1"
+placeholder [RELEASE] = "0"
 placeholder [YEAR] = "2020"
-placeholder [TITLE] = "FIRST_ONE"
+placeholder [TITLE] = "Stupid, selfish Tim Cook"
 placeholder [AUTHOR] = "TheTechRobo"
-placeholder [BLURB] = "A work of interactive fiction."
+placeholder [BLURB] = "In TheTechRobo's first interactive fiction thingymathingy, you steal Tim Cook's purse. That's the plot."
 
 ! Other material to release
 

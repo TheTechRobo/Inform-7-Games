@@ -1,4 +1,12 @@
-"FIRST_ONE" by "TheTechRobo".
+"Stupid, selfish Tim Cook" by "TheTechRobo".
+
+The story title is "Stupid, selfish Tim Cook".
+The story author is "TheTechRobo".
+The story headline is "A fiction that could probably happen".
+The story genre is "Realistic Fiction".
+The release number is 0.
+The story description is "In TheTechRobo's first interactive fiction thingymathingy, you steal Tim Cook's purse. That's the plot."
+The story creation year is 2020.
 
 Tim Cook Value is initially "mad".
 

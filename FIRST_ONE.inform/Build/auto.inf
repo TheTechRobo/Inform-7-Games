@@ -42,7 +42,7 @@ Array UUID_ARRAY string "UUID://035DCA9B-6694-48B0-A35F-968FE834E091//";
 Global Story = BC_0;
 Constant Headline BC_1;
 Constant Story_Author BC_2;
-Release 1;
+Release 0;
 Serial "201123";
 
 Default Story 0;
@@ -10819,9 +10819,9 @@ Class K3_direction
 
 Object I51_north "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV1
     with action_bitmap 0 0 0 0 0 
     with name 'north' 'directions//p' 'n//' 
-    with parse_name Parse_Name_GV1
     with KD_Count 3
     with IK3_Count 0
     with IK3_Link I52_northeast
@@ -10835,9 +10835,9 @@ Object I51_north "" Compass
 
 Object I52_northeast "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV2
     with action_bitmap 0 0 0 0 0 
     with name 'northeast' 'directions//p' 'ne' 
-    with parse_name Parse_Name_GV2
     with KD_Count 3
     with IK3_Count 1
     with IK3_Link I53_northwest
@@ -10851,9 +10851,9 @@ Object I52_northeast "" Compass
 
 Object I53_northwest "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV3
     with action_bitmap 0 0 0 0 0 
     with name 'northwest' 'directions//p' 'nw' 
-    with parse_name Parse_Name_GV3
     with KD_Count 3
     with IK3_Count 2
     with IK3_Link I54_south
@@ -10867,9 +10867,9 @@ Object I53_northwest "" Compass
 
 Object I54_south "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV4
     with action_bitmap 0 0 0 0 0 
     with name 'south' 'directions//p' 's//' 
-    with parse_name Parse_Name_GV4
     with KD_Count 3
     with IK3_Count 3
     with IK3_Link I55_southeast
@@ -10883,9 +10883,9 @@ Object I54_south "" Compass
 
 Object I55_southeast "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV5
     with action_bitmap 0 0 0 0 0 
     with name 'southeast' 'directions//p' 'se' 
-    with parse_name Parse_Name_GV5
     with KD_Count 3
     with IK3_Count 4
     with IK3_Link I56_southwest
@@ -10899,9 +10899,9 @@ Object I55_southeast "" Compass
 
 Object I56_southwest "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV6
     with action_bitmap 0 0 0 0 0 
     with name 'southwest' 'directions//p' 'sw' 
-    with parse_name Parse_Name_GV6
     with KD_Count 3
     with IK3_Count 5
     with IK3_Link I57_east
@@ -10915,9 +10915,9 @@ Object I56_southwest "" Compass
 
 Object I57_east "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV7
     with action_bitmap 0 0 0 0 0 
     with name 'east' 'directions//p' 'e//' 
-    with parse_name Parse_Name_GV7
     with KD_Count 3
     with IK3_Count 6
     with IK3_Link I58_west
@@ -10931,9 +10931,9 @@ Object I57_east "" Compass
 
 Object I58_west "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV8
     with action_bitmap 0 0 0 0 0 
     with name 'west' 'directions//p' 'w//' 
-    with parse_name Parse_Name_GV8
     with KD_Count 3
     with IK3_Count 7
     with IK3_Link I59_up
@@ -10947,9 +10947,9 @@ Object I58_west "" Compass
 
 Object I59_up "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV9
     with action_bitmap 0 0 0 0 0 
     with name 'up' 'directions//p' 'u//' 
-    with parse_name Parse_Name_GV9
     with KD_Count 3
     with IK3_Count 8
     with IK3_Link I60_down
@@ -10963,9 +10963,9 @@ Object I59_up "" Compass
 
 Object I60_down "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV10
     with action_bitmap 0 0 0 0 0 
     with name 'down' 'directions//p' 'd//' 
-    with parse_name Parse_Name_GV10
     with KD_Count 3
     with IK3_Count 9
     with IK3_Link in_obj
@@ -10979,9 +10979,9 @@ Object I60_down "" Compass
 
 Object in_obj "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV11
     with action_bitmap 0 0 0 0 0 
     with name 'inside' 'directions//p' 'in' 
-    with parse_name Parse_Name_GV11
     with KD_Count 3
     with IK3_Count 10
     with IK3_Link out_obj
@@ -10995,9 +10995,9 @@ Object in_obj "" Compass
 
 Object out_obj "" Compass
     class K3_direction
+    with parse_name Parse_Name_GV12
     with action_bitmap 0 0 0 0 0 
     with name 'outside' 'directions//p' 'out' 
-    with parse_name Parse_Name_GV12
     with KD_Count 3
     with IK3_Count 11
     with IK3_Link nothing
@@ -11014,8 +11014,8 @@ Object selfobj ""
 
     	with saved_short_name TX_L_31,
      
-    with action_bitmap 0 0 0 0 0 
     with parse_name Parse_Name_GV13
+    with action_bitmap 0 0 0 0 0 
     with KD_Count 8
     with cap_short_name BC_141
     has mark_as_thing
@@ -11215,8 +11215,8 @@ Array Global_Vars -->
   (BC_190) ! 33 story headline
   (BC_191) ! 34 story genre
   (BC_192) ! 35 story description
-  (1) ! 36 release number
-  (0) ! 37 story creation year
+  (0) ! 36 release number
+  (2020) ! 37 story creation year
   (0) ! 45 locale paragraph count
   (BC_193) ! 60 tim cook value
 ;
@@ -12451,7 +12451,7 @@ Array ActionHappened --> 0 0 0 0 0;
         rfalse;
         }
     ! [6: if tim cook value is ~mad~]
-    if ((( BlkValueCompare((Global_Vars-->10), TX_L_48) == 0)))
+    if ((( BlkValueCompare((Global_Vars-->10), TX_L_49) == 0)))
     {! [7: say ~Are you sure that going back in there with his iPhone is a good idea?~]
         say__p=1;! [8: ~Are you sure that going back in there with his iPhone is a good idea?~]
         ParaContent(); print "Are you sure that going back in there with his iPhone is a good idea?"; new_line; .L_Say6; .L_SayX6;! [9: stop the action]
@@ -12488,7 +12488,7 @@ Array ActionHappened --> 0 0 0 0 0;
             ParaContent(); print "You outran him, but you didn't get the purse."; new_line; .L_Say9; .L_SayX9;! [12: now the player is carrying the iphone]
             MoveObject(I129_iphone,player);
             ! [13: now tim cook value is ~mad~]
-            BlkValueCopy((Global_Vars-->10), TX_L_48);
+            BlkValueCopy((Global_Vars-->10), TX_L_49);
             }
             } else {
         ! [14: continue the action]
@@ -48962,22 +48962,23 @@ Verb 'notify'
 
 
 Constant TX_PS_46 = ">";
-Constant TX_PS_3 = "An Interactive Fiction";
+Constant TX_PS_3 = "A fiction that could probably happen";
 Constant TX_PS_33 = "As good-looking as ever.";
-Constant TX_PS_2 = "FIRST_ONE";
 Constant TX_PS_44 = "Facial Head Canada";
-Constant TX_PS_47 = "Fiction";
+Constant TX_PS_48 = "In TheTechRobo's first interactive fiction thingymathingy, you steal Tim Cook's purse. That's the plot.";
 Constant TX_PS_41 = "It's the iPhone 2G. You want to steal it but you aren't a criminal.";
 Constant TX_PS_36 = "Lobby";
-Constant TX_PS_52 = "QUIT";
-Constant TX_PS_49 = "RESTART";
-Constant TX_PS_50 = "RESTORE a saved game";
+Constant TX_PS_53 = "QUIT";
+Constant TX_PS_50 = "RESTART";
+Constant TX_PS_51 = "RESTORE a saved game";
+Constant TX_PS_47 = "Realistic Fiction";
+Constant TX_PS_2 = "Stupid, selfish Tim Cook";
 Constant TX_PS_4 = "TheTechRobo";
 Constant TX_PS_37 = "There's a wonderful place in Ontario, and that's not Marineland - it's this lobby!";
 Constant TX_PS_43 = "Tim Cook is a jerk and nobody here likes him.";
 Constant TX_PS_39 = "Tim Cook set down his purse for a second, so it's on the ground. He doesn't like his purse, but since it holds his phone, he doesn't want it stolen.";
 Constant TX_PS_42 = "Tim Cook";
-Constant TX_PS_53 = "UNDO the last command";
+Constant TX_PS_54 = "UNDO the last command";
 Constant TX_PS_45 = "You are in Facial Head Canada, a great place that exists. :)";
 Constant TX_PS_32 = "Yourself";
 Constant TX_PS_9 = "animals";
@@ -48992,8 +48993,8 @@ Constant TX_PS_34 = "ground here";
 Constant TX_PS_35 = "iPad";
 Constant TX_PS_40 = "iPhone";
 Constant TX_PS_29 = "inside";
-Constant TX_PS_48 = "mad";
-Array TX_L_48 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_48;
+Constant TX_PS_49 = "mad";
+Array TX_L_49 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_49;
 Constant TX_PS_7 = "men";
 Constant TX_PS_18 = "north";
 Constant TX_PS_20 = "northeast";
@@ -49003,7 +49004,7 @@ Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_38 = "purse";
 Constant TX_PS_16 = "regions";
-Constant TX_PS_51 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_52 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
@@ -56359,13 +56360,13 @@ Array BC_188 --> PACKED_TEXT_STORAGE TX_PS_46;
 Array BC_189 --> PACKED_TEXT_STORAGE TX_PS_4;
 Array BC_190 --> PACKED_TEXT_STORAGE TX_PS_3;
 Array BC_191 --> PACKED_TEXT_STORAGE TX_PS_47;
-Array BC_192 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_193 --> PACKED_TEXT_STORAGE TX_PS_48;
-Array BC_194 --> PACKED_TEXT_STORAGE TX_PS_49;
-Array BC_195 --> PACKED_TEXT_STORAGE TX_PS_50;
-Array BC_196 --> PACKED_TEXT_STORAGE TX_PS_51;
-Array BC_197 --> PACKED_TEXT_STORAGE TX_PS_52;
-Array BC_198 --> PACKED_TEXT_STORAGE TX_PS_53;
+Array BC_192 --> PACKED_TEXT_STORAGE TX_PS_48;
+Array BC_193 --> PACKED_TEXT_STORAGE TX_PS_49;
+Array BC_194 --> PACKED_TEXT_STORAGE TX_PS_50;
+Array BC_195 --> PACKED_TEXT_STORAGE TX_PS_51;
+Array BC_196 --> PACKED_TEXT_STORAGE TX_PS_52;
+Array BC_197 --> PACKED_TEXT_STORAGE TX_PS_53;
+Array BC_198 --> PACKED_TEXT_STORAGE TX_PS_54;
 
 
 
