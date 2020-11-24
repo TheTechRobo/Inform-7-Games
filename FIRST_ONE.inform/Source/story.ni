@@ -16,6 +16,9 @@ Tim Cook is in the Lobby. "Tim Cook is a jerk and nobody here likes him."
 
 before taking the purse:
 	if the purse contains an iPhone: 
-		say "The purse is far too valuable for Tim Cook to let you have it."
+		say "The purse is far too valuable for Tim Cook to let you have it.";
+		stop action;
+	otherwise:
+		say "You have stolen Tim Cook's purse. He doesn't seem to mind."
 
 

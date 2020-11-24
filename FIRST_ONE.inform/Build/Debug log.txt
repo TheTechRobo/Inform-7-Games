@@ -14,7 +14,7 @@ Reading language definition from </usr/local/share/inform7/Internal/Languages/En
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 150 words long.
+I've now read your source text, which is 165 words long.
 
 
 -----------------------------------------------------
@@ -107,6 +107,15 @@ Phase XII ... Code generation
 
 ==== Phase XII.6 ... Compiling first block of phrases ====
 
+    Problem PM_UnknownPhrase issued from inform7/Chapter 20/Dash.w, line 2062
+
+      >--> You wrote 'stop action' (source text, line 20): but this is a phrase
+        which I don't recognise, possibly because it is one you meant to define but
+        never got round to, or because the wording is wrong (see the Phrasebook
+        section of the Index to check). Alternatively, it may be that the text
+        immediately previous to this was a definition whose ending, normally a full
+        stop, is missing?
+
 
 
 ==== Phase XII.7 ... Compiling the rulebooks ====
@@ -129,53 +138,12 @@ Phase XII ... Code generation
 
 
 
-==== Phase XII.12 ... Compiling GPR tokens for parsing various kinds of value ====
-
-
-
-==== Phase XII.13 ... Compiling second block of phrases ====
-
-
-
-==== Phase XII.14 ... Compiling noun and scope filter tokens ====
-
-
-
-==== Phase XII.15 ... Compiling chronology ====
-
-
-
-==== Phase XII.16 ... Compiling I6 Verb directives ====
-
-
-
-==== Phase XII.17 ... Slashing grammar (G1) ====
-
-
-
-==== Phase XII.18 ... Determining grammar (G2) ====
-
-
-
-==== Phase XII.19 ... Sorting and compiling non-value grammar (G3, G4) ====
-
-
-
-==== Phase XII.20 ... Compiling noun and scope filter tokens ====
-
-
-
-==== Phase XII.21 ... Compiling routines from predicate calculus ====
-
-Providing for a total heap of 8192, given requirement of 8192
-
-
 -----------------------------------------------------
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 102 files written as streams.
-CPU time: 170 centiseconds
+Total of 4 files written as streams.
+CPU time: 124 centiseconds
 
 
 That concludes the debugging log from this run of Inform.
