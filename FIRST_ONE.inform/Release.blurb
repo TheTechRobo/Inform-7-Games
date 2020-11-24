@@ -10,8 +10,8 @@ release to "/home/thetechrobo/inform-rubbish/FIRST_ONE.materials/Release"
 
 ! Blorb instructions
 
-storyfile leafname "Stupid, selfish Tim Cook.gblorb"
-storyfile "/home/thetechrobo/inform-rubbish/FIRST_ONE.inform/Build/output.ulx" include
+storyfile leafname "Stupid, selfish Tim Cook.zblorb"
+storyfile "/home/thetechrobo/inform-rubbish/FIRST_ONE.inform/Build/output.z8" include
 ifiction "/home/thetechrobo/inform-rubbish/FIRST_ONE.inform/Metadata.iFiction" include
 cover "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"
 picture 1 "/usr/local/share/inform7/Internal/Miscellany/Cover.jpg"

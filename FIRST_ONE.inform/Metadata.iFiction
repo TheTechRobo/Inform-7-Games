@@ -3,7 +3,7 @@
     <story>
         <identification>
             <ifid>035DCA9B-6694-48B0-A35F-968FE834E091</ifid>
-            <format>glulx</format>
+            <format>zcode</format>
         </identification>
         <bibliographic>
             <title>Stupid, selfish Tim Cook</title>
@@ -30,10 +30,10 @@
             <generatorversion>6M62</generatorversion>
             <originated>2020-11-23</originated>
         </colophon>
-        <glulx>
+        <zcode>
             <serial>201123</serial>
             <release>0</release>
             <compiler>Inform 7 build 6M62</compiler>
-        </glulx>
+        </zcode>
     </story>
 </ifindex>
