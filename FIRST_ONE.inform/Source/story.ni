@@ -24,15 +24,17 @@ before taking the purse:
 		say "You have stolen Tim Cook's purse. He doesn't seem to mind.";
 		continue the action;
 instead of taking the iPhone:
-	if a random chance of 1 in 100 succeeds:
-		say "Hey! Give that back!, Tim Cook says. You oblige.";
-		now Tim Cook has the iPhone;
-	otherwise:
-		say "Tim Cook is now chasing you.";
-		now the player is in Facial Head Canada;
-		say "You outran him, but you didn't get the purse.";
-		now the player is carrying the iPhone;
-		now Tim Cook Value is "mad";
+	if the player is in the Lobby:
+		if a random chance of 1 in 100 succeeds:
+			say "Hey! Give that back!, Tim Cook says. You oblige.";
+			now Tim Cook has the iPhone;
+		otherwise:
+			say "Tim Cook is now chasing you.";
+			now the player is in Facial Head Canada;
+			say "You outran him, but you didn't get the purse.";
+			now the player is carrying the iPhone;
+			now Tim Cook Value is "mad";
+	otherwise: continue the action;
 instead of going to the Lobby:
 	if the player does not have the iPhone:
 		say "You're lucky! Since Tim Cook is such an idiot, he completely forgot about you - he would only have remembered if you had the iPhone.";
