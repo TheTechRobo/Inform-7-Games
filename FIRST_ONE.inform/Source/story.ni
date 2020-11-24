@@ -34,7 +34,8 @@ instead of taking the iPhone:
 			say "You outran him, but you didn't get the purse.";
 			now the player is carrying the iPhone;
 			now Tim Cook Value is "mad";
-	otherwise: continue the action;
+	otherwise: 
+		continue the action;
 instead of going to the Lobby:
 	if the player does not have the iPhone:
 		say "You're lucky! Since Tim Cook is such an idiot, he completely forgot about you - he would only have remembered if you had the iPhone.";
